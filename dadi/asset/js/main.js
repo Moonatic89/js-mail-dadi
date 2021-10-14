@@ -12,19 +12,19 @@ Tools:
 //get 2 random numbers
 const playerDice = Math.floor(Math.random() * 6) + 1;
 const computerDice = Math.floor(Math.random() * 6) + 1;
+const outputElement = document.getElementById("output");
 
 //if
 
 if (playerDice > computerDice) {
     //player wins
-    console.log("player wins");
+    outputElement.innerHTML = "You win! Congrats!~"
 } else if (playerDice < computerDice) {
     //computer wins
-    console.log("computer wins");
+    outputElement.innerHTML = "You lose!"
 
 } else {
     //draw
-    console.log("draw");
-
+    outputElement.innerHTML = "Oh! It's a draw!!"
 }
 
