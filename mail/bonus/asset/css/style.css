@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mailValidate {
+    background-color: wheat;
+    width: 1000px;
+    height: 250px;
+    margin: 5rem auto;
+    border: 10px solid lightgray;
+}
