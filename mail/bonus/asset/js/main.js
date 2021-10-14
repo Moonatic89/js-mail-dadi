@@ -2,38 +2,29 @@
 
 // BONUS - Use an Input /w a button for the email, and then update the message. 
 
-
-/*
-Tools:
-
-- Ask for User mail -> prompt();
-- Check on a list if he can access -> array[];
-- Print a message -> console.log (debug) / innerHTML (definitive)
-
-*/
-
-// Email acquisition
-//const userEmail = prompt(`Please insert your e-mail address before entering
-//[HINT - moonatic1989@gmail.com is allowed]`);
+//Locate button for validation
+const validateBtn = document.getElementById("validateBtn");
+const userEmail = document.getElementById("email");
+const validateMessage = document.getElementById("output");
 
 // Create a list with viable emails
 const allowedEmails = [
     "moonatic1989@gmail.com",
     "kirisakipam@gmail.com",
     "nesi_stefano@hotmail.com",
-    "naminielart@gmail.com",
+    "ninielart@gmail.com",
     "pippopaperino@pluto.ru"
 ];
 
-//Check for allowed emails
-const bAccess = allowedEmails.includes(userEmail);
+//Add event listener
+validateBtn.addEventListener("click", checkForEmail);
 
+function checkForEmail() {
+    const bAccess = allowedEmails.includes(userEmail.value);
 
-/* this is now deprecated
-if (bAccess == true) {
-    document.getElementById("output").innerHTML = "Your e-mail is valid, you can enter. Enjoy!~"
-} else {
-    document.getElementById("output").innerHTML = "I'm sorry, the access is denied for you. Bye!"
+    if (bAccess == true) {
+        validateMessage.innerHTML = "Your e-mail is valid, you can enter. Enjoy!~"
+    } else {
+        validateMessage.innerHTML = "I'm sorry, the access is denied for you. Bye!"
+    }
 }
-*/
-
