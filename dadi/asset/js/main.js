@@ -8,7 +8,6 @@ Tools:
 
 */
 
-
 //get 2 random numbers
 const playerDice = Math.floor(Math.random() * 6) + 1;
 const computerDice = Math.floor(Math.random() * 6) + 1;

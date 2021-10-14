@@ -9,5 +9,20 @@
     width: 1000px;
     height: 250px;
     margin: 5rem auto;
-    border: 10px solid lightgray;
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 1px 1px black;
 }
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formGroup>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* #region My Little Framework*/

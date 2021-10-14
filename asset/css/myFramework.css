@@ -1,0 +1,25 @@
+.mt_3 {
+    margin-top: 3rem;
+}
+
+.mb_1 {
+    margin-bottom: 1rem;
+}
+
+.p_1 {
+    padding: 1rem;
+}
+
+.btn {
+    padding: .25rem 0.1rem;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.bg_cyan {
+    background-color: white;
+}
+
+.text_center {
+    text-align: center;
+}

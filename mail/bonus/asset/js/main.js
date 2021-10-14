@@ -13,8 +13,8 @@ Tools:
 */
 
 // Email acquisition
-const userEmail = prompt(`Please insert your e-mail address before entering
-[HINT -  moonatic1989@gmail.com is allowed]`);
+//const userEmail = prompt(`Please insert your e-mail address before entering
+//[HINT - moonatic1989@gmail.com is allowed]`);
 
 // Create a list with viable emails
 const allowedEmails = [
