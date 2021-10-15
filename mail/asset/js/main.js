@@ -12,6 +12,7 @@ Tools:
 // Email acquisition
 const userEmail = prompt(`Please insert your e-mail address before entering
 [HINT -  moonatic1989@gmail.com is allowed]`);
+let verificationBool;
 
 // Create a list with viable emails
 const allowedEmails = [
@@ -23,10 +24,25 @@ const allowedEmails = [
 ];
 
 //Check for allowed emails
-const bAccess = allowedEmails.includes(userEmail);
+//const bAccess = allowedEmails.includes(userEmail);
 
+//Version without icludes//
+for (let i = 0; i < allowedEmails.length; i++) {
+    if (allowedEmails[i] == userEmail) {
+        verificationBool = true;
+    }
+}
+
+if (verificationBool == true) {
+    document.getElementById("output").innerHTML = "Your e-mail is valid, you can enter. Enjoy!~"
+} else {
+    document.getElementById("output").innerHTML = "I'm sorry, the access is denied for you. Bye!"
+}
+
+/* Version with includes
 if (bAccess == true) {
     document.getElementById("output").innerHTML = "Your e-mail is valid, you can enter. Enjoy!~"
 } else {
     document.getElementById("output").innerHTML = "I'm sorry, the access is denied for you. Bye!"
 }
+*/
