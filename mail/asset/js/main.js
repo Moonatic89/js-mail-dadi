@@ -23,9 +23,16 @@ const allowedEmails = [
     "pippopaperino@pluto.ru"
 ];
 
-//Check for allowed emails
+//Check for allowed emails ~ includes
 //const bAccess = allowedEmails.includes(userEmail);
 
+/* Version with includes
+if (bAccess == true) {
+    document.getElementById("output").innerHTML = "Your e-mail is valid, you can enter. Enjoy!~"
+} else {
+    document.getElementById("output").innerHTML = "I'm sorry, the access is denied for you. Bye!"
+}
+*/
 //Version without icludes//
 for (let i = 0; i < allowedEmails.length; i++) {
     if (allowedEmails[i] == userEmail) {
@@ -39,10 +46,4 @@ if (verificationBool == true) {
     document.getElementById("output").innerHTML = "I'm sorry, the access is denied for you. Bye!"
 }
 
-/* Version with includes
-if (bAccess == true) {
-    document.getElementById("output").innerHTML = "Your e-mail is valid, you can enter. Enjoy!~"
-} else {
-    document.getElementById("output").innerHTML = "I'm sorry, the access is denied for you. Bye!"
-}
-*/
+
